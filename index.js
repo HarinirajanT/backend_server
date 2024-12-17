@@ -10,11 +10,10 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const sequelize = new Sequelize('employee_mng', 'root', 'harinirajanT@og7', {
-    host: 'Employee',
+    host: 'localhost',
     dialect: 'mysql',
     logging: console.log, 
 });
-
 
 const Employee = sequelize.define('employees', { 
     employee_id: { type: DataTypes.STRING(10), unique: true, allowNull: false },
