@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const sequelize = new Sequelize('employee_mng', 'root', 'harinirajanT@og7', {
-    host: 'employee_mng-db-1',
+    host: 'Employee',
     dialect: 'mysql',
     logging: console.log, 
 });
